@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #2F373A;
+  color:#CCEBF9;
+}
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header{
+  padding-top: 3em;
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.titles{
+  margin:2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.titles-title{
+  font-size: 32px;
+}
+.titles-subtitle{
+  font-size: 64px;
+  color: #E5EA0E;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-pic{
+  width: 238px;
+  height: 238px;
+  object-fit: fill;
+}
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name h1{
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.projects{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+.projects-wrap a{
+  margin: 20px;
+}
+.project-block{
+
+  /* background-color: #5681F6; */
+  width: 200px;
+  height: 200px;
+  border: 2px solid #CCEBF900;
+  padding: 5px;
+  transition: 0.4s;
+}
+.project-block:hover{
+  border-color: #CCEBF9;
+}
+
+.projects-title{
+  margin:3em auto 0;
+  font-size: 32px;
+  color: #5681F6;
+}
+
+.last{
+  margin-top:5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.monero{
+  margin-top:1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.monero img{
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+
+.archbackground{
+  opacity: 0.2;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+}
+.dance{
+  opacity: 0.3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+}
+
+@media screen and (max-width: 530px) {
+  .titles-title{
+    font-size: 18px;
+  }
+  .titles-subtitle{
+    font-size: 32px;
+  }
+}
