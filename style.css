@@ -44,6 +44,7 @@ header{
   width: 238px;
   height: 238px;
   object-fit: fill;
+  border-radius: 8px;
 }
 .name{
   display: flex;
@@ -75,8 +76,8 @@ header{
 .project-block{
 
   /* background-color: #5681F6; */
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border: 2px solid #CCEBF900;
   padding: 5px;
   transition: 0.4s;
@@ -134,5 +135,12 @@ header{
   }
   .titles-subtitle{
     font-size: 32px;
+  }
+
+  .project-block{
+
+    /* background-color: #5681F6; */
+    width: 80px;
+    height: 80px;
   }
 }
