@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: galleguillos.me
+Token: 93742e4a16e999d60ad579a6e560804bfbffb20f58eeff2a07e408b67097fa6a
