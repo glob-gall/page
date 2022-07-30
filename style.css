@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding:0 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#top {
+  display: flex;
+}
+
+#profile-photo-bg {
+  position: fixed;
+  
+  z-index: -1;
+
+  animation: bgfoto 10s linear infinite alternate;
+
+}
+
+#photo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#profile-photo {
+  width: 300px;
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: 50px;
+}
+
+#info {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+#info h1 {
+  font-size: 32px;
+}
+
+#contato {
+  display: flex;
+}
+
+#contato ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#contato ul li {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#contato ul li p {
+  margin-left: 10px;
+}
+
+
+
+
+
+#sobre-mim {
+  background-color: #1958F0;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 30px 40px;
+  font-size: 20px;
+  position: relative;
+}
+
+#sobre-mim p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+#sobre-mim strong {
+  color: #F0B119;
+  font-size: 21px;
+}
+
+#sobre-mim::after {
+  content: ' ';
+  position: absolute;
+  background-color: #071A46;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+  animation: sobremim 3s ease-in-out infinite;
+}
+
+
+@keyframes sobremim {
+  0% {
+    top: -10px;
+    left: -10px;
+  }
+  25% {
+    top: 10px;
+    left: -10px;
+  }
+  50% {
+    top: 10px;
+    left: 10px;
+  }
+  75% {
+    top: -10px;
+    left: 10px;
+  }
+  100% {
+    top: -10px;
+    left: -10px;
+  }
+}
+@keyframes bgfoto {
+  0% {
+    top: 0px;
+    right: 0px;
+  }
+  25% {
+    top: -10px;
+    right: 0px;
+  }
+  50% {
+    top: 0px;
+    right: -10px;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+  }
+}
+
+@keyframes footeranimation {
+  0% {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  50% {
+    margin-top: 95px;
+  margin-bottom: 105px;
+  }
+  100% {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+footer {
+  margin-left: 140px;
+  animation: footeranimation 4s linear infinite;
+}
