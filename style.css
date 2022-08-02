@@ -6,13 +6,20 @@
 
 .container {
   width: 100%;
-  padding:0 50px;
+  padding:0 25px;
   margin: 0 auto;
   max-width: 1200px;
+}
+.container2 {
+  width: 100%;
+  padding:0 25;
+  margin: 0 auto;
+  max-width: 1300px;
 }
 
 #top {
   display: flex;
+  flex-wrap: wrap-reverse;
 }
 
 #profile-photo-bg {
@@ -22,20 +29,22 @@
 
   animation: bgfoto 10s linear infinite alternate;
 
+  max-width: 50%;
+
 }
 
 #photo-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  flex: 1;
 }
 
 #profile-photo {
   width: 300px;
-  margin-left: auto;
-  margin-right: 10%;
-  margin-top: 50px;
+  margin: 50px auto;
+  /* margin-right: 10%; */
+  /* margin-top: 30px; */
 }
 
 #info {
@@ -62,6 +71,7 @@
   display: flex;
   align-items: center;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 #contato ul li p {
@@ -69,7 +79,75 @@
 }
 
 
+#orcamento {
+  background-color: #1F3056;
+  padding: 50px 75px;
+  border-radius:35px;
+  margin:100px 0;
+  color:#fff;
+}
+#orcamento h2 {
+  font-size:32px;
+  text-align: center;
+  margin-top:-10px;
+}
 
+#content {
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+}
+
+#content ul {
+  list-style: none;
+  margin-top:30px;
+}
+#content ul li{
+  font-size:23px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 18px;
+}
+
+#botao-whatsapp {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#botao-whatsapp button {
+  background-color: #128C7E;
+  
+  border: solid #fff 6px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  
+  display: flex;
+  align-items: center;
+
+  color: #fff;
+  position: relative;
+  transition: .2s;
+
+  margin-top: 50px;
+}
+#botao-whatsapp button:hover {
+  background-color: #17B4A2;
+}
+
+#botao-whatsapp button span {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+#botao-whatsapp  #numero {
+  margin-left: auto;
+  margin-right: 14%;
+  font-size: 23px;
+
+}
 
 
 #sobre-mim {
@@ -161,6 +239,13 @@
 }
 
 footer {
-  margin-left: 140px;
+  display: flex;
+  align-items: center;
+  width: 100%;
   animation: footeranimation 4s linear infinite;
+}
+
+footer img {
+  margin: 0 auto;
+  max-width: 90%;
 }
