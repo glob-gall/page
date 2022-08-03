@@ -24,6 +24,8 @@ body {
 #top {
   display: flex;
   flex-wrap: wrap-reverse;
+
+  margin-top: 50px;
 }
 
 #profile-photo-bg {
@@ -46,7 +48,7 @@ body {
 
 #profile-photo {
   width: 300px;
-  margin: 50px auto;
+  margin-left: auto;
 }
 
 #info {
@@ -69,11 +71,18 @@ body {
   margin-top: 20px;
 }
 
-#contato ul li {
+#contato ul li a {
   display: flex;
   align-items: center;
   margin-top: 10px;
   font-weight: bold;
+  
+  text-decoration: none;
+  color: #000;
+  transition: .2s;
+}
+#contato ul li a:hover {
+  color: #505050;
 }
 
 #contato ul li p {
@@ -123,14 +132,17 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 10px;
 }
 
 #botao-whatsapp a {
   text-decoration: none;
+  margin-left: auto;
 }
 
 #botao-whatsapp button {
   background-color: #128C7E;
+  cursor: pointer;
   
   border: solid #fff 6px;
   padding: 20px 30px;
@@ -155,7 +167,8 @@ body {
 }
 #botao-whatsapp  #numero {
   margin-left: auto;
-  margin-right: 14%;
+  margin-right: 5px;
+  margin-top: 5px;
   font-size: 23px;
 
 }
@@ -258,5 +271,35 @@ footer {
 
 footer img {
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 100%;
+}
+
+
+@media only screen and (max-width: 853px) {
+  #top{
+    flex-direction: column-reverse;
+  }
+  #profile-photo {
+    margin: 0 auto;
+  }
+
+  #orcamento{
+    padding: 50px 25px;
+
+  }
+  #content {
+    flex-direction: column-reverse;
+  }
+  #botao-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #botao-whatsapp  a{
+    margin:0;
+  }
+  #botao-whatsapp #numero{
+    margin:0;
+    margin-top:15px;
+  }
 }
